@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.55.5" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="alternate" href="index.xml" type="application/rss+xml" title="Almost Unsupervised Text to Speech and Automatic Speech Recognition">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+<title>Dongan TTS</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		
+			
+		
+		
+	</header>
+
+
+    <main role="main">
+        <article itemscope itemtype="https://schema.org/BlogPosting">
+            <h1 class="entry-title" itemprop="headline">Donggan speech synthesis</h1>
+            
+            <section itemprop="entry-text">
+                
+
+<!-- - ArXiv: [arXiv:1710.07654](https://arxiv.org/abs/1710.07654) -->
+
+<h2 id="authors">Authors</h2>
+
+<ul>
+<li>Rui Jiang* (Northwest Normal University) <a href="mailto:rayeren613@gmail.com">jr_w_yy@163.com</a></li>
+<!--<li>author2* (XXXX) <a href="author2@microsoft.com">author2@microsoft.com</a></li>-->
+<!--<li>author3* (XXXX) <a href="author3@microsoft.com">author3@microsoft.com</a></li>-->
+</ul>
+
+<p><small>* Equal contribution.</small></p>
+
+<h2 id="abstract">Introduction</h2>
+
+<p></p>
+<h2 id="Audio-Data">Audio-Data</h2>
+<p>Donggan language is low-resource voice data. Its voice resources are quite precious. The data is difficult to collect. We collect 332 sentences of text data. And invited 5 Donggan people for voice recording. A total of 3616 sentences.</p>
+<h2 id="audio-samples">Audio Samples</h2>
+
+<h3 id="TTS-model">TTS-model</h3>
+<h4>a)Tacotron</h4>
+                <table><thead><tr>
+<th style="text-align: center">step-13000</th>
+<th style="text-align: center">TTS-13000</th>
+                </tr></thead><tbody><tr>
+<td style="text-align: center"><audio controls="controls" ><source src="audio/donggan/step-10000-audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="audio/TTS_dong/1.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
+                </tr></tbody></table>
+<i style="text-align: center"><img src="image/donggan_image/step-10000-align.png" width=200px height=200px/> </i>
+<!--<p>especially as no more time is occupied or cost incurred in casting setting or printing beautiful letters</p>-->
+
+<table><thead><tr>
+<th style="text-align: center">step-45000</th>
+<th style="text-align: center">TTS-45000</th>
+</tr></thead><tbody><tr>
+<td style="text-align: center"><audio controls="controls" ><source src="audio/donggan/step-40000-audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="audio/TTS_dong/2.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
+</tr></tbody></table>
+<i style="text-align: center"><img src="image/donggan_image/step-40000-align.png" width=200px height=200px/> </i>
+
+<!-- <audio controls="controls" >
+<source src="audio/unsuper/4.wav" autoplay/>
+Your browser does not support the audio element.
+</audio> -->
+
+<p>than in the same operations with ugly ones</p>
+
+<table><thead><tr>
+<th style="text-align: center">step-70000</th>
+<th style="text-align: center">TTS-70000</th>
+</tr></thead><tbody><tr>
+<td style="text-align: center"><audio controls="controls" ><source src="audio/donggan/step-70000-audio.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="audio/TTS_dong/dayan.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
+</tr></tbody></table>
+<i style="text-align: center"><img src="image/donggan_image/step-70000-align.png" width=200px height=200px/> </i>
+
+<!-- <audio controls="controls" >
+<source src="audio/unsuper/5.wav" autoplay/>
+Your browser does not support the audio element.
+</audio> -->
+
+<p>the forms of printed letters should be beautiful and that their arrangement on the page should be reasonable and a help to the shapeliness of the letters themselves</p>
+
+<!--<table><thead><tr>-->
+<!--<th style="text-align: center">200-Pairs Only</th>-->
+<!--<th style="text-align: center">Our Method</th>-->
+<!--</tr></thead><tbody><tr>-->
+<!--<td style="text-align: center"><audio controls="controls" ><source src="audio/200/4.wav" autoplay/>Your browser does not support the audio element.</audio></td>-->
+<!--<td style="text-align: center"><audio controls="controls" ><source src="audio/unsuper/6.wav" autoplay/>Your browser does not support the audio element.</audio> </td>-->
+<!--</tr></tbody></table>-->
+
+<!--&lt;!&ndash; <audio controls="controls" >-->
+<!--<source src="audio/unsuper/6.wav" autoplay/>-->
+<!--Your browser does not support the audio element.-->
+<!--</audio> &ndash;&gt;-->
+
+
+<table><thead><tr>
+<th style="text-align: center">TTS-13000</th>
+<th style="text-align: center">TTS-45000</th>
+<th style="text-align: center">TTS-70000</th>
+</tr></thead><tbody><tr>
+<td style="text-align: center"><audio controls="controls" ><source src="audio/TTS_chi/eval-13000-0.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="audio/TTS_chi/eval-45000-0.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
+<td style="text-align: center"><audio controls="controls" ><source src="audio/TTS_chi/eval-70000-0.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
+</tr></tbody></table>
+
+<p>TTS-70000(Чы мо жу хуә мо тон)-(chi mao rou huo mao tang)-(吃猫肉喝猫汤)</p>
+
+                <table><thead><tr>
+<th style="text-align: center">Problem</th>
+</tr></thead><tbody><tr>
+<td style="text-align: center"><audio controls="controls" ><source src="audio/error/error.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr></tbody></table>
+                <p>Synthesized speech is too long, easy to lose the data behind</p>
+
+<!-- <audio controls="controls" >
+<source src="audio/unsuper/7.wav" autoplay/>
+Your browser does not support the audio element.
+</audio> -->
+<h2>Other TTS model</h2>
+<h3> b) Tacotron2</h3>
+                <p>WaveNet Speech enhancement</p>
+                <p>neural networks</p>
+                <p>Speech enhancement: For example SEGAN and CPGAN and PAGAN</p>
+                <h4>B_1) SEGAN</h4>
+                    <p>Speech enhancement</p>
+                        <table><thead><tr>
+                        <th style="text-align: center">clean</th>
+                        <th style="text-align: center">noisy</th>
+                        <th style="text-align: center">SEGAN</th>
+                        </tr></thead><tbody><tr>
+                        <td style="text-align: center"><audio controls="controls" ><source src="audio/SEGAN/clean.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+                        <td style="text-align: center"><audio controls="controls" ><source src="audio/SEGAN/input_segan.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
+                        <td style="text-align: center"><audio controls="controls" ><source src="audio/SEGAN/output_segan.wav" autoplay/>Your browser does not support the audio element.</audio> </td>
+                        </tr></tbody></table>
+<h3> c) Real-Time-Voice-Cloning</h3>
+                <p>Transfer learning acoustic model</p>
+                                <p>Tacotron2</p>
+                <p>WaveNet</p>
+                <h2 id="code">Code</h2>
+
+<p>Emile：540821774@qq.com</p>
+
+            </section>
+        </article>
+    </main>
+
+
+	
+
+</div>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-139981676-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+         HTML: ["input/TeX","output/HTML-CSS"],
+         TeX: {
+                Macros: {
+                         bm: ["\\boldsymbol{#1}", 1],
+                         argmax: ["\\mathop{\\rm arg\\,max}\\limits"],
+                         argmin: ["\\mathop{\\rm arg\\,min}\\limits"]},
+                extensions: ["AMSmath.js","AMSsymbols.js"],
+                equationNumbers: { autoNumber: "AMS" } },
+         extensions: ["tex2jax.js"],
+         jax: ["input/TeX","output/HTML-CSS"],
+         tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    processEscapes: true },
+         "HTML-CSS": { availableFonts: ["TeX"],
+                       linebreaks: { automatic: true } }
+     });
+ </script>
+
+ <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+       }
+     });
+ </script>
+
+ <script type="text/javascript" async
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+ </script>
+
+
+
+
+</body>
+</html>
+
